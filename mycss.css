@@ -1,0 +1,146 @@
+body{
+    margin:0;
+    background: url(https://img.freepik.com/free-vector/watercolor-stains-abstract-background_23-2149107181.jpg?w=2000);
+    background-repeat: no-repeat;
+}
+
+.container{
+    width: 1200px;
+    margin: 0 auto;
+    background: #FFFFFF;
+    
+}
+
+.menu{
+    height: 60px;
+    background: linear-gradient(violet,greenyellow);
+   
+}
+
+.menu ul{
+
+    list-style: none;
+    float: right;
+}
+
+.menu ul li{
+    float: left;
+    padding: 7px 25px;
+    height: 20px;
+    line-height: 10px;
+    border-right: 1px solid rgb(73, 71, 66);
+}
+.menu ul li:last-child{
+    border-right: none;
+}
+.menu ul li a{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 100;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    
+}
+.menu ul li a:hover,.menu ul li a.active{
+    color: #FFFFFF;
+    border-bottom: 1px solid #FFFFFF;
+    transition:0.2s ease ;
+}
+
+.introduction{
+    width: 75%;
+    float: left;
+    background: linear-gradient(white,green,red);
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+}
+.introduction1{
+    width: 75%;
+    float: left;
+    background: linear-gradient(violet,rgb(31, 158, 88));
+    padding: 10px;
+    margin: 10px;
+    text-align: justify;
+}
+.introduction2{
+    width: 75%;
+    float: left;
+    background: linear-gradient(rgb(8, 85, 173),rgb(31, 158, 88));
+    padding: 10px;
+    margin: 10px;
+    text-align: justify;
+}
+.introduction3{
+    width: 75%;
+    float: left;
+    background: linear-gradient(rgb(34, 21, 95),rgb(135, 22, 170));
+    padding: 10px;
+    margin: 10px;
+    text-align: justify;
+}
+
+.sidebar{
+    width: 20%;
+    background: linear-gradient(rgb(187, 100, 19),greenyellow,rgb(53, 94, 141));
+    display: inline-block;
+    margin: 10px;
+    
+}
+.clear{
+
+    clear:both;
+}
+
+.sidebar h3{
+    text-align: center;
+    font-weight: bold;
+    color: black;
+   background: white;
+    text-transform: uppercase;
+    
+}
+.line{
+
+    
+    width: 100px;
+    border: 1px dashed rgb(102, 95, 95);
+}
+.sidebar ul li{
+    padding: 5px 0;
+    text-align: center;
+    margin-right: 30px;
+}
+.sidebar ul li a{
+    font-size: 16px;
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.sidebar ul li a:hover{
+    color: #FFFFFF;
+    background: linear-gradient(white,green,red);
+    font-size: 18px;
+    font-weight: bold;
+    transition: font-size 0.2s linear ;
+}
+.sidebar ul {
+    list-style: none;
+}
+.footer{
+    height: 70px;
+    background: linear-gradient(violet,greenyellow);
+    padding-top: 20px;
+}
+.footer p{
+    text-align: center;
+    font-size: 16px;
+    
+}
+
+iframe{
+    text-align: center;
+}
