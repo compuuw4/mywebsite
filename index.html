@@ -1,128 +1,537 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <link rel="stylesheet" href="mycss.css">
-        <meta charset="UTF-8">
-        <title>My website Html</title>
-    </head>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Full stack web developer.
+                   Greetings! I'm Dobri Dobrev , a passionate and innovative web developer
+                    with a knack for turning ideas into digital reality. 
+                    Let me take you on a journey through my professional story.">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Rubik:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap"
+    rel="stylesheet">
+  <link rel="icon" href="./img/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <title>Web Developer</title>
+</head>
 
-    <body>
-        <div class="container">
+<body>
+  <header class="myheader">
+    <!-- Hamburger menu on 896px 56em -->
+    <nav id="main-nav" class="main-nav sticky">
+        <a href="#"><img src="./img/logo.png" alt="logo" class="mylogo"></a>
+        <!-- Obbligatorio metter id del navigazione per il target in css -->
+        <a href="#main-nav">
+        <ion-icon class="icon-mob-nav open" alt="icon" name="menu-outline"></ion-icon>
+      </a>
+        <!-- nel link si mette main(si po mettere qualsiasi nome funziona) 
+        solo perche al click della icona close ritorna sempre in alto  -->
+        <a href="#main">
+          <ion-icon class="icon-mob-nav close" alt="icon-close" name="close-outline"></ion-icon>
+        </a>
+      <ul class="main-nav-list">
+        <li><a class="main-nav-link" href="#">Home</a></li>
+        <li><a class="main-nav-link" href="#my-works">Works</a></li>
+        <li><a class="main-nav-link" href="#blog">Blog</a></li>
+        <li>
+          <a class="main-nav-link" href="#services">Services</a>
+        </li>
+        <li>
+          <a class="main-nav-link nav-cta" href="#contacts">
+            <span class="contact-box">
+              <span class="contact">Contacts</span>
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+              stroke="currentColor" class="contact-icon">
+              <path stroke-linecap="round" stroke-linejoin="round"
+              d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z" />
+            </svg>
+          </span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+  </header>
+  <!-- Hero section -->
+  <main>
+    <section class="hero-section">
+      <div class="hero-container">
+        <div class="big-hero-box">
+          <h1 class="big-hero-title">
+            Full stack web development every single day
+          </h1>
+          <p class="hero-description">
+            Greetings! I'm <strong> Dobri Dobrev </strong>, a passionate and
+            innovative web developer with a knack for turning ideas into
+            digital reality. Let me take you on a journey through my
+            professional story.
+          </p>
+          <div class="hero-buttons">
+            <a href="#contacts" class="hero-btn1 bio-button">Say Hello</a>
+            <a href="#my-works" class="hero-btn2 bio-button">My Works</a>
+          </div>
 
-            <div class="menu">
-                <ul>
-                    <li><a class="" href="">Home</a></li>
-                    <li><a href="">Blog</a></li>
-                    <li><a href="">News</a></li>
-                    <li><a href="">Contact</a></li>
-                    <li><a href="">About</a></li>
-                    <li><a href="">Info</a></li>
+          <p class="social-text">Follow me on Social media</p>
+          <ul class="social-icons">
+            <li>
+              <a href=""><img src="./img/social%20media/facebook.png" alt="facebook" id="face"></a>
+            </li>
+            <li>
+              <a href=""><img src="./img/social%20media/twitter.png" alt="twitter"></a>
+            </li>
+            <li>
+              <a href=""><img src="./img/social%20media/youtube.png" alt="youtube"></a>
+            </li>
+            <li>
+              <a href=""><img src="./img/social%20media/google.png" alt="google"></a>
+            </li>
+            <li>
+              <a href=""><img src="./img/social%20media/rss.png" alt="rss"></a>
+            </li>
+          </ul>
+        </div>
+        <img src="./img/web-developer-img.png" class="myphoto" alt="My Foto" title="Dobri Dobrev">
+      </div>
+    </section>
+    <!-- Featured section -->
+    <section class="section-featured">
+      <div class="container">
+        <h2 class="heading-featured-in">As featured in</h2>
+        <div class="logos">
+          <img src="./img/logos/techcrunch.png" alt="Techcrunch logo">
+          <img src="./img/logos/business-insider.png" alt="Business Insider logo">
+          <img src="./img/logos/the-new-york-times.png" alt="The New York Times logo">
+          <img src="./img/logos/forbes.png" alt="Forbes logo">
+          <img src="./img/logos/usa-today.png" alt="USA Today logo">
+        </div>
+      </div>
+    </section>
 
-                </ul>
+    <!-- Works Section -->
 
-            </div>
+    <section class="work-section" id="my-works">
+      <div class="container">
+        <span class="sub-heading">My Works</span>
+        <h2 class="secondary-heading">Web Development Work</h2>
+      </div>
+      <div class="container grid-system grid--2-cols">
+        <div class="box-work">
+          <p class="work-number">01</p>
+          <h3 class="work-heading-title">Front-End</h3>
+          <p class="work-description">
+            Description: Front-end developers focus on the user interface and
+            experience. They bring designs to life by coding in HTML, CSS, and
+            JavaScript, ensuring that websites look visually appealing and
+            function smoothly for end-users.
+          </p>
+        </div>
+        <!-- First work -->
 
-            <div class="introduction">
+        <div class="front-end">
+          <img src="./img/works/front-end.png" alt="Front-end development" class="work-images">
+        </div>
+        <!-- Second Work -->
 
-                <h3>Do you love creating websites Html?</h3>
-
-                <iframe name="bomba" height="400" width="800">
-
-                </iframe>
-
-            </div>
-            <div class="introduction1">
-
-                <h3>Do you love creating websites Css?</h3>
-                <p>If you like create websites but u don't know how to do it
-                    this is the right course for you!
-                    In this course we can practise together creating websites in
-                    different examples.
-                    More important thing to learn faster coding is to practice
-                    every single day.
-                    At starting you can code with html and css and after that
-                    passing to bootstrap and javascript,php and
-                    mysql.
-                </p>
-            </div>
-
-            <div class="introduction2">
-
-                <h3>Do you love creating websites Javascript?</h3>
-                <p>If you like create websites but u don't know how to do it
-                    this is the right course for you!
-                    In this course we can practise together creating websites in
-                    different examples.
-                    More important thing to learn faster coding is to practice
-                    every single day.
-                    At starting you can code with html and css and after that
-                    passing to bootstrap and javascript,php and
-                    mysql.
-                </p>
-            </div>
-
-
-            <div class="sidebar">
-                <h3>Youtube Music</h3>
-
-                <ul>
-                    <li><a href="https://www.youtube.com/watch?v=R0F7Qo_zq0I"
-                            target="bomba">Dana Dana</a></li>
-                    <li><a href="https://www.youtube.com/watch?v=VOel6VdYtQk"
-                            target="bomba"> Tutur Dur</a></li>
-                    <li><a href="https://www.youtube.com/watch?v=UyWdOGH-KMM"
-                            target="bomba"> Criminal</a></li>
-                    <li><a href="https://www.youtube.com/watch?v=Lvpmh9eYVkc"
-                            target="bomba">Habibi</a></li>
-                    <li><a href="">About</a></li>
-                    <li><a href="">Info</a></li>
-
-                </ul>
-                <hr class="line">
-                <ul>
-                    <li><a href="">Home</a></li>
-                    <li><a href="">Blog</a></li>
-                    <li><a href="">News</a></li>
-                    <li><a href="">Contact</a></li>
-                    <li><a href="">About</a></li>
-                    <li><a href="">Info</a></li>
-
-                </ul>
-                <hr class="line">
-                <ul>
-                    <li><a href="">Home</a></li>
-                    <li><a href="">Blog</a></li>
-                    <li><a href="">News</a></li>
-                    <li><a href="">Contact</a></li>
-                    <li><a href="">About</a></li>
-                    <li><a href="">Info</a></li>
-
-                </ul>
-                <hr class="line">
-                <ul>
-                    <li><a href="">Home</a></li>
-                    <li><a href="">Blog</a></li>
-                    <li><a href="">News</a></li>
-                    <li><a href="">Contact</a></li>
-                    <li><a href="">About</a></li>
-                    <li><a href="">Info</a></li>
-
-                </ul>
-            </div>
-
-            <div class="clear">
-
-            </div>
-
-            <footer>
-                <div class="footer">
-                    <p>Copyright 2023</p>
-                </div>
-            </footer>
-
+        <div class="back-end">
+          <img src="./img/works/back-end.png" alt="Front-end development" class="work-images">
         </div>
 
-    </body>
+        <div class="box-work">
+          <p class="work-number">02</p>
+          <h3 class="work-heading-title">Back-End</h3>
+          <p class="work-description">
+            Back-end developers work behind the scenes to build server-side
+            logic, databases, and application functionality. They are
+            responsible for handling data, ensuring server performance, and
+            integrating various systems to make the website function
+            seamlessly.
+          </p>
+        </div>
+        <!-- Third Work -->
+
+        <div class="box-work">
+          <p class="work-number">03</p>
+          <h3 class="work-heading-title">Fullstack</h3>
+          <p class="work-description">
+            Full-stack developers have expertise in both front-end and
+            back-end development. They can handle the entire web development
+            process, from designing user interfaces to managing databases and
+            server-side scripting. Full-stack developers provide end-to-end
+            solutions for comprehensive web development projects.
+          </p>
+        </div>
+        <div class="full-stack">
+          <img src="./img/works/full-stack.png" alt="Front-end development" class="work-images">
+        </div>
+      </div>
+    </section>
+    <!-- Section Blog -->
+
+    <section class="blog-section" id="blog">
+      <div class="container">
+        <span class="sub-heading">Blog</span>
+        <h2 class="secondary-heading">Web Development Articles</h2>
+      </div>
+      <div class="container">
+
+        <div class="blog-articles">
+          <article class="art-1">
+            <img
+            src="./img/blog/hamburger-menu.png"
+              alt="first article" class="blog-imgs">
+            <div class="blog-box">
+              <div class="blog-tags">
+                <div>
+                  <span class="tag">Html & Css</span>
+                </div>
+                <div>
+                  <span class="published">Published on 29 february 1988</span>
+                </div>
+              </div>
+              <h2 class="h2-center">Hamburger Menu</h2>
+              <p class="paragraf-description">
+                Feel free to fiddle with those numbers to get the sizing and style
+                you like. Something awesome you might not know? SVG has rounded
+                corners, just like CSS has border-radius! It comes in the form of
+                the rx attribute.
+              </p>
+            </div>
+            <a href="#" class="read-more">Read More ...</a>
+          </article>
+
+          <article class="art-2">
+            <img
+              src="./img/blog/if-statement.jpg"
+              alt="second article" class="blog-imgs">
+            <div class="blog-box">
+              <div class="blog-tags">
+                <div>
+                  <span class="tag">Javascript</span>
+                </div>
+                <div>
+                  <span class="published">Published on 29 february 1988</span>
+                </div>
+              </div>
+              <h2 class="h2-center">If Statement</h2>
+              <p class="paragraf-description">
+                Feel free to fiddle with those numbers to get the sizing and style
+                you like. Something awesome you might not know? SVG has rounded
+                corners, just like CSS has border-radius! It comes in the form of
+                the rx attribute.
+              </p>
+              <a href="#" class="read-more">Read More ...</a>
+              </div>
+
+          </article>
+          <article class="art-3">
+
+            <img
+            src="./img/blog/blog-back-end.jpg" alt="third article" class="blog-imgs">
+
+            <div class="blog-box">
+              <div class="blog-tags">
+                <div>
+                  <span class="tag">Php</span>
+                </div>
+                <div>
+                  <span class="published">Published on 29 february 1988</span>
+                </div>
+              </div>
+              <h2 class="h2-center">Back End</h2>
+              <p class="paragraf-description">
+                Feel free to fiddle with those numbers to get the sizing and style
+                you like. Something awesome you might not know? SVG has rounded
+                corners, just like CSS has border-radius! It comes in the form of
+                the rx attribute.
+              </p>
+              <a href="#" class="read-more">Read More ...</a>
+            </div>
+          </article>
+
+          <article class="art-4">
+
+            <img
+            src="./img/blog/hamburger-menu.png" alt="fourth article" class="blog-imgs">
+
+            <div class="blog-box">
+              <div class="blog-tags">
+                <div>
+                  <span class="tag">Laravel</span>
+                </div>
+                <div>
+                  <span class="published">Published on 29 february 1988</span>
+                </div>
+              </div>
+              <h2 class="h2-center">Framework</h2>
+              <p class="paragraf-description">
+                Feel free to fiddle with those numbers to get the sizing and style
+                you like. Something awesome you might not know? SVG has rounded
+                corners, just like CSS has border-radius! It comes in the form of
+                the rx attribute.
+              </p>
+              <a href="#" class="read-more">Read More ...</a>
+            </div>
+          </article>
+          <article class="art-5">
+
+            <img
+            src="./img/blog/if-statement.jpg" alt="fifth article" class="blog-imgs">
+
+            <div class="blog-box">
+              <div class="blog-tags">
+                <div>
+                  <span class="tag">Typescript</span>
+                </div>
+                <div>
+                  <span class="published">Published on 29 february 1988</span>
+                </div>
+              </div>
+              <h2 class="h2-center">Front End</h2>
+              <p class="paragraf-description">
+                Feel free to fiddle with those numbers to get the sizing and style
+                you like. Something awesome you might not know? SVG has rounded
+                corners, just like CSS has border-radius! It comes in the form of
+                the rx attribute.
+              </p>
+              <a href="#" class="read-more">Read More ...</a>
+            </div>
+          </article>
+          <article class="art-6">
+
+            <img
+            src="./img/blog/blog-back-end.jpg" alt="sixth article" class="blog-imgs">
+
+            <div class="blog-box">
+              <div class="blog-tags">
+                <div>
+                  <span class="tag">Angular</span>
+                </div>
+                <div>
+                  <span class="published">Published on 29 february 1988</span>
+                </div>
+              </div>
+              <h2 class="h2-center">Framework</h2>
+              <p class="paragraf-description">
+                Feel free to fiddle with those numbers to get the sizing and style
+                you like. Something awesome you might not know? SVG has rounded
+                corners, just like CSS has border-radius! It comes in the form of
+                the rx attribute.
+              </p>
+              <a href="#" class="read-more">Read More ...</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Service section -->
+    <div id="services" class="my-services container">
+      <span class="sub-heading">Services</span>
+      <h2 class="secondary-heading">Web Development</h2>
+    </div>
+    <section class="service-section">
+      <div class="service-box">
+        <div class="text-box">
+
+          <h3 class="heading-service">Custom Website Design</h3>
+          <p class="service-description">
+            Craft a distinctive online identity with a bespoke website tailored
+            to your brand. Our custom designs ensure a unique and memorable user
+            experience,reflecting your business's personality and values.
+          </p>
+        </div>
+        <img src="./img/services/custom-website-design.jpg" alt="custom website design" class="gallery-img">
+      </div>
+      <div class="service-box">
+        <div class="text-box">
+          <h3 class="heading-service">Responsive Web Development</h3>
+          <p class="service-description ">
+            In a world where users access websites from various devices,
+            responsiveness is key. Our developers create websites that adapt
+            seamlessly to different screen sizes, providing an optimal user.
+
+          </p>
+        </div>
+        <img src="./img/services/responsive.jpg" alt="responsive service" class="gallery-img">
+      </div>
+      <div class="service-box">
+        <div class="text-box">
+          <h3 class="heading-service">E-commerce Solutions</h3>
+          <p class="service-description">
+            Elevate your online sales with our e-commerce development services.
+            From intuitive product catalogs to secure payment gateways, we
+            create robust and user-friendly online stores that drive conversions
+            and boost your line.
+          </p>
+
+        </div>
+        <img src="./img/services/ecommerce.jpg" alt="ecommerce" class="gallery-img">
+      </div>
+      <div class="service-box">
+        <div class="text-box">
+          <h3 class="heading-service">Content Management Systems</h3>
+          <p class="service-description medium-margin">
+            Take control of your website's content with a user-friendly CMS.
+            Whether it's WordPress, Drupal, or another platform, we implement
+            and customize CMS solutions to empower you to manage and update your
+            website effortlessly.
+          </p>
+        </div>
+        <img src="./img/services/cms.jpg" alt="Content Management Systems" class="gallery-img">
+      </div>
+      <div class="service-box">
+        <div class="text-box">
+          <h3 class="heading-service">Web Application Development</h3>
+          <p class="service-description">
+            Transform your ideas into interactive and dynamic web applications.
+            Our developers utilize cutting-edge technologies to build scalable
+            and efficient web applications that meet the unique requirements of
+            your business.
+          </p>
+        </div>
+        <img src="./img/services/web-application.jpg" alt="service web application" class="gallery-img">
+      </div>
+
+      <div class="service-box">
+        <div class="text-box">
+          <h3 class="heading-service">Maintenance and Support</h3>
+          <p class="service-description">
+            Ensure your website stays secure, up-to-date, and performs at its
+            best with our maintenance and support services . From routine
+            updates to troubleshooting and bug fixes, we've got you covered to
+            keep your online presence seamless.
+          </p>
+        </div>
+        <img src="./img/services/Maintenance.jpg" alt="maintenance" class="gallery-img">
+      </div>
+    </section>
+
+    <!-- Contact CTA Section -->
+    <section class="contact-section" id="contacts">
+      <div class="container">
+        <div class="cta">
+
+          <div class="cta-text-box">
+            <h2 class="secondary-heading">
+              Let's Build Your Vision
+            </h2>
+            <p class="cta-text">
+              Empower your digital dreams with our expert web development services.
+              Let's collaborate to turn your vision into reality.
+            </p>
+            <form action="#" class="cta-form">
+              <div>
+                <label for="full-name">Full Name</label>
+                <input id="full-name" type="text" placeholder="John Wick" required>
+              </div>
+              <div>
+                <label for="email">Email address</label>
+                <input id="email" type="email" placeholder="your-email@example.com" required>
+              </div>
+              <div>
+                <label for="select-where">Where did you here for us?</label>
+                <select name="select-where" id="select-where" required>
+                  <option value="">Please choose one option</option>
+                  <option value="google">Google Search</option>
+                  <option value="facebook">Facebook</option>
+                  <option value="podcast">Podcast</option>
+                  <option value="friends">Friends and family</option>
+                  <option value="youtube">Youtube</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+              <button class="btn">Sign up now</button>
+            </form>
+          </div>
+          <img src="./img/Dobri-Dobrev.png" class="cta-img-box" alt="Developer Dobri Dobrev">
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer  -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="logo">
+        <p class="copyright">
+          Copyright © <span class="year">2024</span><br class="copy-trick">
+          All rights reserved.
+        </p>
+
+        <ul class="footer-social-icons">
+          <li>
+            <a href=""><img src="./img/social%20media/facebook.png" alt="facebook" id="footer-face"></a>
+          </li>
+          <li>
+            <a href=""><img src="./img/social%20media/twitter.png" alt="twitter"></a>
+          </li>
+          <li>
+            <a href=""><img src="./img/social%20media/youtube.png" alt="youtube"></a>
+          </li>
+          <li>
+            <a href=""><img src="./img/social%20media/google.png" alt="google"></a>
+          </li>
+          <li>
+            <a href=""><img src="./img/social%20media/rss.png" alt="rss"></a>
+          </li>
+        </ul>
+        <a href="#">
+          <img class="footer-logo" alt="Dobri Dobrev" src="./img/logo.png">
+        </a>
+
+      </div>
+        
+        <nav class="footer-nav">
+          <p class="footer-heading">Account</p>
+          <ul class="footer-list">
+            <li><a class="footer-link" href="#">Create account</a></li>
+            <li><a class="footer-link" href="#">Sign in</a></li>
+            <li><a class="footer-link" href="#">iOS app</a></li>
+            <li><a class="footer-link" href="#">Android app</a></li>
+          </ul>
+        </nav>
+        
+        <nav class="footer-nav">
+          <p class="footer-heading">Company</p>
+          <ul class="footer-list">
+            <li><a class="footer-link" href="#">About me</a></li>
+            <li><a class="footer-link" href="#">For Business</a></li>
+          <li><a class="footer-link" href="#">Our partners</a></li>
+          <li><a class="footer-link" href="#">Careers</a></li>
+        </ul>
+      </nav>
+      
+      <nav class="footer-nav">
+        <p class="footer-heading">Resources</p>
+        <ul class="footer-list">
+          <li><a class="footer-link" href="#">Coding info </a></li>
+          <li><a class="footer-link" href="#">Help center</a></li>
+          <li><a class="footer-link" href="#">Privacy &amp; terms</a></li>
+        </ul>
+      </nav>
+      
+      <div class="footer-address">
+        <p class="footer-heading">Contact us</p>
+        <address class="footer-contacts">
+          <p>San Francisco</p>
+          <p>
+            <a class="footer-link" href="tel:415-201-6370">Tel: 415-201-6370</a><br>
+            <a class="footer-link" href="mailto:dobri_dobrev@yahoo.com">dobri_dobrev@yahoo.com</a>
+          </p>
+        </address>
+      </div>
+    </div>
+  </footer>
+</body>
 
 </html>
